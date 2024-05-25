@@ -4,6 +4,8 @@ import foodImage from "./assets/image-omelette.jpeg";
 import data from "./assets/omelette-recipe-data.json";
 
 function App() {
+  const instructionsData = data.instructions;
+
   return (
     <>
       <div className="main-div">
@@ -26,7 +28,19 @@ function App() {
               {data.preperationTime.cooking}
             </li>
           </ul>
-
+          <h1 className="instructions-title">Ingredients </h1>
+          
+          <h1 className="instructions-title">Instructions </h1>
+          <ol>
+            {instructionsData.map((step) => {
+              return (
+                <li className="instruction-bullet">
+                  <span className="bold-bullet">{step[0]}: </span>
+                  {step[1]}
+                </li>
+              );
+            })}
+          </ol>
         </div>
       </div>
     </>

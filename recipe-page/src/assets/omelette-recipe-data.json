@@ -5,5 +5,28 @@
     "total": "Approximately 10 minutes",
     "preperation": "5 minutes",
     "cooking": "5 mintes"
-  }
+  },
+  "instructions": [
+    [
+      "Beat the eggs",
+      "In a bowl, beat the eggs with a pinch of pepper until they are well mixed.You can add a teaspoon of milk or warer to create a more fluffed texture."
+    ],
+    [
+      "Heat the pan",
+      "Place a non-stick frying pan on a medium heat and butter or oil."
+    ],
+    [
+      "Cook the omeletter",
+      "Once the butter is melted and bubbling, pour in the eggs, Tilt the pan to make sure the eggs evenly coat the surface."
+    ],
+    [
+      "Add fillings (optional)",
+      "When the eggs begin to set off the edge but are still slightly runny in the middle, sprinly your cheese fillign on half the omelette."
+    ],
+    [
+      "Fold and serve",
+      "As teh omeltte continues to cook. carefully lift one edge and fold it."
+    ],
+    ["Enjoy", "Serve hot, add additional salt and pepper if needed."]
+  ]
 }

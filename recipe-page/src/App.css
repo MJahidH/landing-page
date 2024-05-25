@@ -61,3 +61,13 @@ body {
 .bold-bullet {
   font-weight: 900;
 }
+
+.instructions-title{
+  font-size: 30px;
+  padding-top: 20px;
+}
+
+
+.instruction-bullet {
+  padding-right : 20px;
+}
