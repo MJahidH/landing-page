@@ -1,14 +1,17 @@
-import { useState } from 'react'
-import './App.css'
+import { useState } from "react";
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-<>
-<h1>Hello World</h1>
-</>
-  )
+    <>
+      <div className="main-div">
+        <div className="child">
+          <h1>This is where the image will go </h1> 
+          <h1>This is where the image will go </h1> 
+          </div>
+      </div>
+    </>
+  );
 }
 
-export default App
+export default App;
