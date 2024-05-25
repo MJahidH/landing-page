@@ -5,6 +5,7 @@ import data from "./assets/omelette-recipe-data.json";
 
 function App() {
   const instructionsData = data.instructions;
+  const ingredientsData = data.ingredients;
 
   return (
     <>
@@ -29,7 +30,11 @@ function App() {
             </li>
           </ul>
           <h1 className="instructions-title">Ingredients </h1>
-          
+          <ul>
+            {ingredientsData.map((ingredient) => {
+              return <li className="instruction-bullet">{ingredient}</li>;
+            })}
+          </ul>
           <h1 className="instructions-title">Instructions </h1>
           <ol>
             {instructionsData.map((step) => {
