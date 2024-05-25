@@ -1,4 +1,9 @@
 {
-
-    "title" : "Simple Omelette Recipe"
+  "title": "Simple Omelette Recipe",
+  "mainDescription": "An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to perfection, optionally filled with your choice of cheese, vegetables, or meats.",
+  "preperationTime": {
+    "total": "Approximately 10 minutes",
+    "preperation": "5 minutes",
+    "cooking": "5 mintes"
+  }
 }
