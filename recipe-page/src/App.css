@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
 }
@@ -14,9 +15,9 @@ html, body {
 
 .main-div {
   border: 5px solid yellow;
-
+  position: relative;
   border-radius: 30px;
-  width: 25rem; /* Fixed width */
+  width: 30rem; /* Fixed width */
   height: 45rem; /* Fixed height */
   box-sizing: border-box; /* Includes padding and border in the element's total width and height */
   display: flex; /* Enables flexbox for child alignment */
@@ -26,9 +27,37 @@ html, body {
 }
 
 .child {
-  border: 5px solid yellow;
   width: 90%; /* Takes full width of the parent padding adjusted */
   height: 90%; /* Takes full height of the parent padding adjusted */
   overflow: auto; /* Adds scrollbars if content overflows */
   word-wrap: break-word; /* Ensures words do not overflow their container */
+}
+
+.food-image {
+  width: 70%;
+  height: 20%;
+  display : block;
+  margin : 0 auto;
+}
+
+.main-title {
+  font-size: 35px;
+}
+
+.prep-title {
+  font-size: 25px;
+  padding-top: 25px;
+  padding-left: 40px;
+}
+
+.prep-list {
+  padding-left: 60px;
+}
+
+.prep-bullet {
+  padding-left: 25px;
+}
+
+.bold-bullet {
+  font-weight: 900;
 }
