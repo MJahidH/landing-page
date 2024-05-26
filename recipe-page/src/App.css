@@ -10,7 +10,6 @@ body {
   justify-content: center; /* Centers horizontally */
   min-height: 100%;
   min-width: 100%;
-  border: 5px solid yellow;
 }
 
 .main-div {
@@ -46,16 +45,26 @@ body {
 
 .prep-title {
   font-size: 25px;
+  color: rgb(255, 247, 252);
   padding-top: 25px;
   padding-left: 40px;
 }
 
 .prep-list {
-  padding-left: 60px;
+  list-style: none; /* Remove default bullets */
+  padding-left: 60px; /* Your desired padding for the entire list */
 }
 
-.prep-bullet {
+.prep-list li {
+  position: relative;
   padding-left: 25px;
+}
+
+.prep-list li::before {
+  content: "•"; /* Custom bullet */
+  color: rgb(255, 247, 252); /* Light pink color */
+  position: absolute;
+  left: -20px;
 }
 
 .bold-bullet {
@@ -76,9 +85,9 @@ body {
 }
 
 .nutrition-div {
-  border-bottom: 3px solid yellow;
-  padding-bottom : 10px;
-  padding-top : 10px;
+  border-bottom: 3px solid grey;
+  padding-bottom: 10px;
+  padding-top: 10px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -87,15 +96,11 @@ body {
 }
 
 .nutrition-list-title {
-
-  flex : 1;
+  flex: 1;
   text-align: left;
-
 }
 
 .nutrition-list-value {
-
-  flex : 1;
+  flex: 1;
   text-align: left;
-
 }
