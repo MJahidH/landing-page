@@ -6,6 +6,7 @@ import data from "./assets/omelette-recipe-data.json";
 function App() {
   const instructionsData = data.instructions;
   const ingredientsData = data.ingredients;
+  const nutritionData = data.nutrition;
 
   return (
     <>
@@ -52,20 +53,16 @@ function App() {
             additional fillings
           </p>
           <ul className="nutrition-list">
-            <ul className="nutrition-list">
-              <li>
-                <div className="nutrition-div">
-                  <div className="nutrition-list-title">Calorites</div>
-                  <div className="nutrition-list-value">277kcal</div>
-                </div>
-
-                <div className="nutrition-div">
-                  <div className="nutrition-list-title">carbs</div>
-                  <div className="nutrition-list-value">0g</div>
-                </div>
-
-              </li>
-            </ul>
+            {nutritionData.map((data) => {
+              return (
+                <li>
+                  <div className="nutrition-div">
+                    <div className="nutrition-list-title">{data[0]}</div>
+                    <div className="nutrition-list-value">{data[1]}</div>
+                  </div>
+                </li>
+              );
+            })}
           </ul>
         </div>
       </div>

@@ -76,7 +76,9 @@ body {
 }
 
 .nutrition-div {
-  border: 5px solid yellow;
+  border-bottom: 3px solid yellow;
+  padding-bottom : 10px;
+  padding-top : 10px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -85,14 +87,14 @@ body {
 }
 
 .nutrition-list-title {
-  border: 5px solid yellow;
+
   flex : 1;
   text-align: left;
 
 }
 
 .nutrition-list-value {
-  border: 5px solid yellow;
+
   flex : 1;
   text-align: left;
 
