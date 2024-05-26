@@ -36,8 +36,8 @@ body {
 .food-image {
   width: 70%;
   height: 20%;
-  display : block;
-  margin : 0 auto;
+  display: block;
+  margin: 0 auto;
 }
 
 .main-title {
@@ -62,12 +62,38 @@ body {
   font-weight: 900;
 }
 
-.instructions-title{
+.instructions-title {
   font-size: 30px;
   padding-top: 20px;
 }
 
-
 .instruction-bullet {
-  padding-right : 20px;
+  padding-right: 20px;
+}
+
+.nutrition-list {
+  list-style-type: none;
+}
+
+.nutrition-div {
+  border: 5px solid yellow;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 50%;
+  word-wrap: break-word; /* Ensures words do not overflow their container */
+}
+
+.nutrition-list-title {
+  border: 5px solid yellow;
+  flex : 1;
+  text-align: left;
+
+}
+
+.nutrition-list-value {
+  border: 5px solid yellow;
+  flex : 1;
+  text-align: left;
+
 }
