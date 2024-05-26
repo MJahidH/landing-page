@@ -109,8 +109,25 @@ body {
 }
 
 
+ol {
+  counter-reset: section; /* Initialize the counter */
+
+}
+
 .instruction-bullet {
-  padding-right: 20px;
+  counter-increment: section; /* Increment the counter for each list item */
+  list-style: none; /* Remove default list styling */
+  position: relative;
+  padding-left: 10px; /* Add some padding to make space for the custom number */
+}
+
+.instruction-bullet::before {
+  content: counter(section) "."; /* Use the counter value as the content */
+  font-weight: bold; /* Make the number bold */
+  color: rgb(255, 247, 252); 
+  position: absolute;
+  left: -30px; /* Position it to the left of the list item */
+
 }
 
 
