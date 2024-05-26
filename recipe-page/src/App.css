@@ -94,10 +94,6 @@ body {
 }
 
 
-.bold-bullet {
-  font-weight: 900;
-}
-
 .instructions-title {
   font-size: 30px;
   padding-top: 20px;
@@ -110,15 +106,6 @@ body {
   padding-top: 20px;
   color: rgb(128, 0, 0); 
 }
-
-
-
-.nutrition-list {
-  list-style-type: none;
-  
-  
-}
-
 
 ol {
   counter-reset: section; /* Initialize the counter */
@@ -142,7 +129,10 @@ ol {
 
 }
 
-
+.nutrition-list {
+  list-style-type: none;
+   
+}
 
 .nutrition-div {
   border-bottom: 3px solid grey;
@@ -166,4 +156,9 @@ ol {
   text-align: left;
   color: rgb(128, 0, 0); 
   font-weight: bold;
+}
+
+
+.bold-bullet {
+  font-weight: 900;
 }
