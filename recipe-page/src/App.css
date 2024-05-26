@@ -67,6 +67,24 @@ body {
   left: -20px;
 }
 
+.ingredients-list {
+  list-style: none; /* Remove default bullets */
+  padding-left: 1px; /* Your desired padding for the entire list */
+}
+
+.ingredients-list li {
+  position: relative;
+  padding-left: 20px;
+}
+
+.ingredients-list li::before {
+  content: "•"; /* Custom bullet */
+  color: rgb(255, 247, 252); /* Light pink color */
+  position: absolute;
+  left: 0;
+}
+
+
 .bold-bullet {
   font-weight: 900;
 }
@@ -85,13 +103,17 @@ body {
 
 
 
+.nutrition-list {
+  list-style-type: none;
+  
+}
+
+
 .instruction-bullet {
   padding-right: 20px;
 }
 
-.nutrition-list {
-  list-style-type: none;
-}
+
 
 .nutrition-div {
   border-bottom: 3px solid grey;

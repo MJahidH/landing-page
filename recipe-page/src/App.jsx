@@ -31,9 +31,9 @@ function App() {
             </li>
           </ul>
           <h1 className="ingredients-title">Ingredients </h1>
-          <ul>
+          <ul className="ingredients-list">
             {ingredientsData.map((ingredient) => {
-              return <li className="instruction-bullet">{ingredient}</li>;
+              return <li className="ingredient-bullet">{ingredient}</li>;
             })}
           </ul>
           <h1 className="instructions-title">Instructions </h1>
