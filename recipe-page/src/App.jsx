@@ -30,7 +30,7 @@ function App() {
               {data.preperationTime.cooking}
             </li>
           </ul>
-          <h1 className="instructions-title">Ingredients </h1>
+          <h1 className="ingredients-title">Ingredients </h1>
           <ul>
             {ingredientsData.map((ingredient) => {
               return <li className="instruction-bullet">{ingredient}</li>;
