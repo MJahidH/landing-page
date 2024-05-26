@@ -10,10 +10,11 @@ body {
   justify-content: center; /* Centers horizontally */
   min-height: 100%;
   min-width: 100%;
+  background-color : rgb(210, 180, 140);
 }
 
 .main-div {
-  border: 5px solid yellow;
+  border: 5px solid black;
   position: relative;
   border-radius: 30px;
   width: 30rem; /* Fixed width */
@@ -23,6 +24,7 @@ body {
   justify-content: center; /* Center child horizontally */
   align-items: center; /* Center child vertically */
   overflow: hidden; /* Hides any overflow from the main div */
+  background-color : white;
 }
 
 .child {
@@ -41,11 +43,16 @@ body {
 
 .main-title {
   font-size: 35px;
+  color: black;
+}
+
+.main-description {
+  color: black;
 }
 
 .prep-title {
   font-size: 25px;
-  color: rgb(255, 247, 252);
+  color: rgb(128, 0, 0); 
   padding-top: 25px;
   padding-left: 40px;
 }
@@ -53,6 +60,7 @@ body {
 .prep-list {
   list-style: none; /* Remove default bullets */
   padding-left: 60px; /* Your desired padding for the entire list */
+  color: black;
 }
 
 .prep-list li {
@@ -62,7 +70,7 @@ body {
 
 .prep-list li::before {
   content: "•"; /* Custom bullet */
-  color: rgb(255, 247, 252); /* Light pink color */
+  color: rgb(128, 0, 0); 
   position: absolute;
   left: -20px;
 }
@@ -70,6 +78,7 @@ body {
 .ingredients-list {
   list-style: none; /* Remove default bullets */
   padding-left: 1px; /* Your desired padding for the entire list */
+  color: black;
 }
 
 .ingredients-list li {
@@ -79,7 +88,7 @@ body {
 
 .ingredients-list li::before {
   content: "•"; /* Custom bullet */
-  color: rgb(255, 247, 252); /* Light pink color */
+  color: rgb(128, 0, 0); 
   position: absolute;
   left: 0;
 }
@@ -92,13 +101,14 @@ body {
 .instructions-title {
   font-size: 30px;
   padding-top: 20px;
-  color: rgb(255, 247, 252); 
+  color: rgb(128, 0, 0); 
+  
 }
 
 .ingredients-title {
   font-size: 30px;
   padding-top: 20px;
-  color: rgb(255, 247, 252); 
+  color: rgb(128, 0, 0); 
 }
 
 
@@ -106,11 +116,13 @@ body {
 .nutrition-list {
   list-style-type: none;
   
+  
 }
 
 
 ol {
   counter-reset: section; /* Initialize the counter */
+  color: black;
 
 }
 
@@ -124,7 +136,7 @@ ol {
 .instruction-bullet::before {
   content: counter(section) "."; /* Use the counter value as the content */
   font-weight: bold; /* Make the number bold */
-  color: rgb(255, 247, 252); 
+  color: rgb(128, 0, 0); 
   position: absolute;
   left: -30px; /* Position it to the left of the list item */
 
@@ -146,11 +158,12 @@ ol {
 .nutrition-list-title {
   flex: 1;
   text-align: left;
+  color: black;
 }
 
 .nutrition-list-value {
   flex: 1;
   text-align: left;
-  color: rgb(255, 247, 252); 
+  color: rgb(128, 0, 0); 
   font-weight: bold;
 }
